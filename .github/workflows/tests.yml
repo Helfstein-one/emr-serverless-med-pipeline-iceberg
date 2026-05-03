@@ -27,7 +27,7 @@ jobs:
       - name: Instalar Dependências
         run: |
           pip install --upgrade pip
-          pip install pytest pytest-mock pyspark pytest-cov findspark boto3
+          pip install pytest pytest-mock "pyspark>=3.5.0,<3.6.0" pytest-cov findspark boto3
           
       # Adicionar o diretório atual ao PYTHONPATH para que os testes consigam importar "spark.jobs" etc.
       - name: Testes Unitários

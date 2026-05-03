@@ -66,7 +66,9 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dbt-spark
-        run: pip install "dbt-spark[PyHive]>=1.7.0"
+        run: |
+          sudo apt-get update && sudo apt-get install -y libsasl2-dev libsasl2-modules-gssapi-mit
+          pip install "dbt-spark[PyHive]>=1.7.0"
 
       - name: Verificar configuração dbt
         run: |
