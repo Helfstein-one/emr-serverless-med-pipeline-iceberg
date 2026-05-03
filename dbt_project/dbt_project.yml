@@ -1,0 +1,33 @@
+# ============================================================
+# dbt Project — Lakehouse de Saúde
+# ============================================================
+
+name: 'med_pipeline'
+version: '1.0.0'
+
+profile: 'med_pipeline'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configuração global dos modelos
+models:
+  med_pipeline:
+    silver:
+      +schema: silver
+      +materialized: incremental
+      +file_format: iceberg
+      +tags: ['silver', 'contratos']
+    gold:
+      +schema: gold
+      +materialized: table
+      +file_format: iceberg
+      +tags: ['gold', 'analytics']

@@ -1,0 +1,99 @@
+# ============================================================
+# GitHub Actions CI — Lakehouse de Saúde
+# ============================================================
+# Executa lint e validação de código em cada push/PR.
+# ============================================================
+
+name: CI — Lint & Validação
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-python:
+    name: 🐍 Lint Python (Ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: pip install ruff
+
+      - name: Executar Ruff (lint)
+        run: ruff check spark/ airflow/
+
+      - name: Executar Ruff (format check)
+        run: ruff format --check spark/ airflow/
+
+  lint-sql:
+    name: 📝 Lint SQL (SQLFluff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar SQLFluff
+        run: pip install sqlfluff sqlfluff-templater-dbt dbt-spark
+
+      - name: Executar SQLFluff (lint)
+        run: |
+          sqlfluff lint dbt_project/models/ \
+            --dialect sparksql \
+            --ignore templating \
+            || true  # Não bloqueia CI por warnings SQL
+
+  validate-dbt:
+    name: 🔧 Validar dbt (compile)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dbt-spark
+        run: pip install "dbt-spark[PyHive]>=1.7.0"
+
+      - name: Verificar configuração dbt
+        run: |
+          cd dbt_project
+          dbt debug --profiles-dir . || true
+
+  validate-compose:
+    name: 🐳 Validar Compose
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar sintaxe do compose
+        run: |
+          pip install docker-compose
+          docker-compose -f podman-compose.yml config --quiet || true
+
+  shellcheck:
+    name: 🐚 ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar ShellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Verificar scripts shell
+        run: |
+          shellcheck pipeline.sh || true
+          shellcheck conf/minio/init-buckets.sh || true

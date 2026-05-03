@@ -1,0 +1,101 @@
+id_internacao,data_internacao,data_alta,cid_principal,cid_secundario,nome_hospital,uf,municipio,cod_municipio_ibge,especialidade,tipo_atendimento,valor_total,dias_permanencia,sexo,idade,carater_atendimento
+INT-2023-000381,2023-11-16,2023-11-25,J15.9,J44.1,Hospital Universitário - UFMA,MG,Uberlândia,3170206,Pediatria,Internação Clínica,35404.25,9,M,26,Acidente
+INT-2023-000880,2023-05-05,2023-05-14,I50.0,N18.3,Hospital São Lucas - PUCRS,RS,Caxias do Sul,4305108,Ortopedia,Internação Cirúrgica,18165.83,9,F,32,Urgência
+INT-2023-000562,2023-11-30,2023-12-02,D50.9,,Hospital Estadual Getúlio Vargas,PE,Recife,2611606,Gastroenterologia,Internação Clínica,14230.07,2,F,49,Urgência
+INT-2024-000655,2024-11-05,2024-11-07,K80.1,J45.0,Hospital João XXIII - BH,RS,Caxias do Sul,4305108,Dermatologia,Internação Clínica,45469.68,2,F,80,Urgência
+INT-2024-000869,2024-02-13,2024-02-18,I63.9,N40,Hospital Sírio-Libanês,RJ,Niterói,3303302,Cirurgia Geral,Internação Clínica,5838.84,5,F,61,Eletivo
+INT-2024-000170,2024-02-26,2024-02-27,E11.0,J44.1,Hospital Municipal Souza Aguiar,BA,Salvador,2927408,Cardiologia,Internação,26457.08,1,F,2,Urgência
+INT-2023-000056,2023-03-14,2023-03-21,I10,J44.1,Hospital Sírio-Libanês,PA,Belém,1501402,Cardiologia,Internação,8713.18,7,M,54,Eletivo
+INT-2023-000567,2023-05-26,2023-05-31,K80.1,N40,Hospital Sírio-Libanês,MG,Uberlândia,3170206,Oncologia,Internação Cirúrgica,47493.17,5,M,6,Eletivo
+INT-2023-000888,2023-09-19,2023-09-24,I10,Z87.8,Hospital João XXIII - BH,CE,Fortaleza,2304400,Ginecologia,Internação Cirúrgica,14945.24,5,M,80,Eletivo
+INT-2024-000098,2024-09-08,2024-09-10,K35.8,E14.0,Hospital Estadual Getúlio Vargas,PR,Curitiba,4106902,Cirurgia Geral,Internação Clínica,32328.1,2,M,98,Acidente
+INT-2024-000765,2024-11-27,2024-12-27,O80.0,J45.0,Hospital Albert Einstein,MA,São Luís,2111300,Gastroenterologia,Internação Clínica,17863.66,30,M,96,Acidente
+INT-2023-000443,2023-06-26,2023-07-03,S72.0,J45.0,Hospital Sírio-Libanês,PA,Belém,1501402,Nefrologia,Internação Clínica,11418.34,7,F,78,Urgência
+INT-2023-000072,2023-08-31,2023-09-04,C34.9,E14.0,Hospital da Restauração - Recife,MG,Uberlândia,3170206,Infectologia,Internação Clínica,48693.34,4,F,2,Acidente
+INT-2023-000421,2023-07-04,2023-07-09,N39.0,I25.1,Hospital Regional do Gama,RS,Porto Alegre,4314902,Neurologia,Internação Clínica,25335.58,5,,45,Eletivo
+INT-2023-000748,2023-03-18,2023-03-24,S82.0,N18.3,Hospital de Clínicas de Porto Alegre,CE,Fortaleza,2304400,Urologia,Internação,6642.59,6,F,40,Urgência
+INT-2024-000345,2024-03-21,2024-03-26,C34.9,N18.3,Hospital Regional do Gama,CE,Fortaleza,2304400,Ortopedia,Internação Cirúrgica,1022.51,5,F,61,Acidente
+INT-2023-000739,2023-10-17,2023-10-20,K35.8,E66.0,Hospital das Clínicas - FMUSP,RJ,Rio de Janeiro,3304557,Cardiologia,Internação Cirúrgica,47981.25,3,F,46,Urgência
+INT-2024-000575,2024-04-18,2024-04-22,J18.9,I10,hospital universitário - ufma,RJ,Niterói,3303302,Geriatria,Internação Clínica,31449.21,4,M,95,Acidente
+INT-2023-000800,2023-05-06,2023-05-13,J15.9,J45.0,Hospital Sírio-Libanês,SP,Campinas,3509502,Endocrinologia,Internação Cirúrgica,47100.64,7,M,63,Acidente
+INT-2023-000003,2023-08-09,2023-08-23,K35.8,J45.0,Hospital das Clínicas - FMUSP,MG,Uberlândia,3170206,Oncologia,Internação,48669.23,14,F,12,Eletivo
+INT-2023-000769,2023-12-06,2023-12-11,C34.9,N40,Hospital Sírio-Libanês,RS,Porto Alegre,4314902,Gastroenterologia,Internação Clínica,48423.58,5,M,5,Eletivo
+INT-2023-000177,2023-10-30,2023-11-06,K35.8,F32.1,Hospital das Clínicas - FMUSP,DF,Brasília,5300108,Cardiologia,Internação,757.16,7,F,19,Eletivo
+INT-2024-000051,2024-05-10,2024-05-13,O80.0,I25.1,Hospital de Base - DF,PE,Recife,2611606,Oncologia,Internação,14078.41,3,F,12,Urgência
+INT-2024-000540,2024-09-18,2024-09-28,g40.9,N18.3,Hospital João XXIII - BH,PA,Belém,1501402,Cirurgia Geral,Internação Clínica,21148.3,10,M,91,Eletivo
+INT-2023-000450,2023-02-14,2023-02-16,J15.9,I25.1,Hospital Universitário Clementino Fraga Filho,SP,São Paulo,3550308,Gastroenterologia,Internação Clínica,29198.21,2,M,20,Eletivo
+INT-2024-000279,2024-04-02,2024-04-06,J18.9,,Hospital Municipal Souza Aguiar,RS,Caxias do Sul,4305108,Nefrologia,Internação Clínica,15577.6,4,,51,Acidente
+INT-2023-000746,2023-12-27,2024-01-01,J96.0,N40,Santa Casa de Misericórdia,SP,Campinas,3509502,Ginecologia,Internação,976.83,5,F,23,Acidente
+INT-2023-000862,2023-12-16,2023-12-21,K35.8,,Hospital Municipal Souza Aguiar,MA,São Luís,2111300,Dermatologia,Internação,38452.77,5,F,11,Urgência
+INT-2023-000924,2023-03-16,2023-03-23,E11.0,J44.1,Hospital João XXIII - BH,RS,Porto Alegre,4314902,Dermatologia,Internação Clínica,17320.58,7,F,57,Acidente
+INT-2024-000877,2024-11-02,2024-11-10,J18.9,E14.0,Hospital de Base - DF,PR,Curitiba,4106902,Dermatologia,Internação Cirúrgica,21411.62,8,M,40,Urgência
+INT-2024-000442,2024-07-03,2024-07-05,K35.8,E11.0,Hospital Albert Einstein,PE,Recife,2611606,Neurologia,Internação Clínica,32614.93,2,M,94,Urgência
+INT-2024-000047,2024-08-29,2024-09-01,K35.8,E11.0,Hospital Albert Einstein,MA,São Luís,2111300,Gastroenterologia,Internação Cirúrgica,9501.07,3,F,57,Urgência
+INT-2023-000035,2023-01-06,2023-01-15,S72.0,E78.0,Hospital de Base - DF,MA,São Luís,2111300,Cirurgia Geral,Internação,23094.86,9,F,28,Eletivo
+INT-2023-000911,2023-12-16,2023-12-19,C34.9,Z87.8,Hospital Regional do Gama,BA,Salvador,2927408,Gastroenterologia,Internação Cirúrgica,8574.98,3,F,14,Urgência
+INT-2024-000776,2024-09-21,2024-09-30,I10,K21.0,Hospital Albert Einstein,PR,Curitiba,4106902,Urologia,Internação,20445.64,9,F,16,Urgência
+INT-2024-000483,2024-03-11,2024-03-18,K35.8,E14.0,Hospital das Clínicas - FMUSP,PR,Curitiba,4106902,Oncologia,Internação Clínica,3433.63,7,M,99,Urgência
+INT-2023-000697,2023-01-14,2023-01-21,S72.0,K21.0,Hospital de Base - DF,SP,São Paulo,3550308,Ortopedia,Internação Cirúrgica,16921.94,7,F,90,Urgência
+INT-2023-000233,2023-07-26,2023-08-03,J44.1,K21.0,hospital municipal souza aguiar,MG,Uberlândia,3170206,Oncologia,Internação Cirúrgica,48047.66,8,F,7,Eletivo
+INT-2023-000431,2023-09-19,2023-09-26,N17.9,E14.0,Hospital Universitário - UFMA,RS,Porto Alegre,4314902,Pneumologia,Internação,1092.09,7,M,66,Urgência
+INT-2023-000138,2023-01-18,2023-01-22,S82.0,E14.0,Hospital das Clínicas - FMUSP,CE,Fortaleza,2304400,Infectologia,Internação Clínica,29092.9,4,F,92,Acidente
+INT-2024-000531,2024-03-09,2024-03-11,I63.9,E14.0,Hospital de Base - DF,RS,Porto Alegre,4314902,Neurologia,Internação Clínica,34468.71,2,M,55,Urgência
+INT-2023-000523,2023-10-17,2023-10-26,E11.0,J44.1,Hospital da Restauração - Recife,MG,Belo Horizonte,3106200,Oncologia,Internação Clínica,32014.28,9,F,55,Eletivo
+INT-2023-000742,2023-08-10,2023-08-19,I21.0,N18.3,Hospital Universitário Clementino Fraga Filho,SP,Campinas,3509502,Gastroenterologia,Internação,47684.85,9,M,41,Eletivo
+INT-2023-000221,2023-03-28,2023-04-03,K80.1,N18.3,Santa Casa de Misericórdia,BA,Salvador,2927408,Geriatria,Internação Cirúrgica,46339.08,6,M,75,Eletivo
+INT-2024-000639,2024-04-12,2024-04-21,A09.0,E78.0,Hospital Municipal Souza Aguiar,RS,Porto Alegre,4314902,Ginecologia,Internação Cirúrgica,31108.41,9,M,77,Acidente
+INT-2024-000716,2024-09-15,2024-09-22,J96.0,,Hospital de Base - DF,PA,Belém,1501402,Endocrinologia,Internação Clínica,19687.9,7,F,16,Urgência
+INT-2023-000451,2023-07-23,2023-07-30,N17.9,,Hospital São Lucas - PUCRS,PA,Belém,1501402,Neurologia,Internação,23814.02,7,M,41,Eletivo
+INT-2023-000721,2023-01-09,2023-01-11,K80.1,I10,Hospital Sírio-Libanês,SP,Campinas,3509502,Ginecologia,Internação Cirúrgica,23690.19,2,M,72,Acidente
+INT-2024-000359,2024-09-19,2024-09-22,J96.0,K21.0,Hospital Estadual Getúlio Vargas,RS,Porto Alegre,4314902,Pneumologia,Internação,5799.23,3,M,12,Urgência
+INT-2024-000980,2024-06-04,2024-06-08,I21.0,E78.0,Hospital Municipal São Paulo,DF,Brasília,5300108,Gastroenterologia,Internação,28771.69,4,M,58,Acidente
+INT-2023-000436,2023-08-12,2023-08-19,N39.0,E11.0,Hospital Universitário Clementino Fraga Filho,SP,Campinas,3509502,Cirurgia Geral,Internação Cirúrgica,7868.29,7,F,13,Acidente
+INT-2024-000009,2024-04-24,2024-04-29,J18.9,N18.3,Hospital João XXIII - BH,BA,Salvador,2927408,Urologia,Internação,22959.32,5,M,87,Acidente
+INT-2024-000411,2024-12-16,2024-12-21,N39.0,F32.1,Hospital Sírio-Libanês,RS,Caxias do Sul,4305108,Urologia,Internação,35130.92,5,F,29,Acidente
+INT-2024-000745,2024-01-28,2024-02-02,I63.9,N18.3,Hospital São Lucas - PUCRS,PE,Recife,2611606,Nefrologia,Internação Clínica,47543.72,5,M,57,Acidente
+INT-2024-000570,2024-07-22,2024-07-27,n39.0,,Hospital João XXIII - BH,SP,São Paulo,3550308,Pediatria,Internação Clínica,19317.6,5,F,83,Eletivo
+INT-2023-000954,2023-04-08,2023-04-10,I63.9,J45.0,Hospital Albert Einstein,PR,Curitiba,4106902,Nefrologia,Internação Clínica,2345.17,2,F,50,Eletivo
+INT-2024-000315,2024-11-08,2024-11-16,N39.0,K21.0,Hospital Albert Einstein,SP,Campinas,3509502,Infectologia,Internação,31348.98,8,F,61,Acidente
+INT-2023-000659,2023-03-31,2023-04-06,I50.0,E14.0,Hospital de Base - DF,MA,São Luís,2111300,Pneumologia,Internação,15379.7,6,M,15,Acidente
+INT-2023-000180,2023-05-23,2023-05-26,A09.0,N18.3,Hospital Universitário - UFMA,MG,Belo Horizonte,3106200,Neurologia,Internação Clínica,31439.17,3,M,21,Acidente
+INT-2023-000438,2023-03-13,2023-03-19,G40.9,E11.0,Hospital de Clínicas de Porto Alegre,SP,São Paulo,3550308,Dermatologia,Internação Clínica,4988.02,6,M,72,Acidente
+INT-2023-000649,2023-10-26,2023-11-02,J96.0,E11.0,Hospital Municipal São Paulo,RS,Porto Alegre,4314902,Cirurgia Geral,Internação,42910.55,7,M,91,Acidente
+INT-2023-000944,2023-07-19,2023-07-21,J18.9,Z87.8,Hospital Albert Einstein,CE,Fortaleza,2304400,Oncologia,Internação,40112.87,2,M,93,Eletivo
+INT-2023-000237,2023-03-21,2023-03-24,K35.8,N40,santa casa de misericórdia,MG,Uberlândia,3170206,Cardiologia,Internação Clínica,563.42,3,F,57,Eletivo
+INT-2023-000553,2023-11-16,2023-11-21,J44.1,N18.3,Hospital Estadual Getúlio Vargas,PR,Curitiba,4106902,Endocrinologia,Internação Cirúrgica,49354.26,5,M,3,Urgência
+INT-2024-000242,2024-03-13,2024-03-15,D50.9,J45.0,Hospital Estadual Getúlio Vargas,MA,São Luís,2111300,Geriatria,Internação,15763.49,2,F,25,Eletivo
+INT-2023-000856,2023-01-11,2023-01-14,I21.0,,Hospital Regional do Gama,MG,Uberlândia,3170206,Pneumologia,Internação Clínica,14014.88,3,M,75,Acidente
+INT-2024-000784,2024-04-14,2024-04-17,O80.0,J44.1,Hospital São Lucas - PUCRS,RJ,Rio de Janeiro,3304557,Ginecologia,Internação Clínica,36100.85,3,M,44,Eletivo
+INT-2024-000396,2024-08-15,2024-08-19,C34.9,I10,Hospital das Clínicas - FMUSP,SP,São Paulo,3550308,Pediatria,Internação Cirúrgica,7160.02,4,F,47,Acidente
+INT-2024-000995,2024-11-06,2024-11-13,N39.0,E14.0,Hospital Universitário Clementino Fraga Filho,MG,Uberlândia,3170206,Gastroenterologia,Internação Cirúrgica,45281.47,7,F,47,Acidente
+INT-2023-000324,2023-10-21,2023-10-28,J44.1,E78.0,hospital municipal são paulo,PE,Recife,2611606,Pneumologia,Internação Clínica,25772.12,7,F,56,Acidente
+INT-2024-000630,2024-05-15,2024-05-22,I50.0,E14.0,Hospital Municipal Souza Aguiar,MG,Uberlândia,3170206,Endocrinologia,Internação Clínica,1898.68,7,F,54,Acidente
+INT-2024-000772,2024-05-29,2024-06-05,A09.0,I10,Hospital Regional do Gama,PR,Curitiba,4106902,Pediatria,Internação,2090.77,7,M,91,Eletivo
+INT-2024-000491,2024-02-14,2024-02-18,K80.1,J45.0,Hospital da Restauração - Recife,CE,Fortaleza,2304400,Neurologia,Internação Clínica,47148.95,4,F,65,Urgência
+INT-2023-000838,2023-02-13,2023-02-15,N17.9,J44.1,Hospital Municipal São Paulo,MG,Belo Horizonte,3106200,Geriatria,Internação Clínica,43892.77,2,M,4,Urgência
+INT-2024-000236,2024-08-09,2024-08-14,I50.0,I10,Hospital da Restauração - Recife,PR,Curitiba,4106902,Cirurgia Geral,Internação Cirúrgica,7461.85,5,M,77,Acidente
+INT-2023-000514,2023-07-24,2023-07-31,K35.8,J44.1,Hospital da Restauração - Recife,MG,Uberlândia,3170206,Geriatria,Internação Clínica,34444.79,7,M,20,Eletivo
+INT-2024-000250,2024-12-08,2024-12-11,E11.0,K21.0,Hospital Universitário - UFMA,DF,Brasília,5300108,Endocrinologia,Internação Clínica,5361.76,3,F,2,Urgência
+INT-2023-000613,2023-04-28,2023-05-05,N39.0,J44.1,Hospital São Lucas - PUCRS,RJ,Rio de Janeiro,3304557,Gastroenterologia,Internação Cirúrgica,42157.35,7,F,59,Urgência
+INT-2024-000338,2024-05-02,2024-05-10,J96.0,E66.0,Hospital Universitário - UFMA,SP,Campinas,3509502,Cardiologia,Internação Cirúrgica,43434.74,8,F,46,Acidente
+INT-2023-000165,2023-09-03,2023-09-09,K80.1,J45.0,Hospital Sírio-Libanês,PR,Curitiba,4106902,Cardiologia,Internação Clínica,23739.78,6,F,68,Eletivo
+INT-2023-000099,2023-11-27,2023-12-06,A09.0,F32.1,Hospital São Lucas - PUCRS,CE,Fortaleza,2304400,Oncologia,Internação,15865.19,9,F,8,Eletivo
+INT-2023-000266,2023-03-08,2023-03-16,N39.0,F32.1,Hospital Sírio-Libanês,MG,Belo Horizonte,3106200,Infectologia,Internação,8661.73,8,F,55,Eletivo
+INT-2024-000777,2024-04-18,2024-04-26,N39.0,I10,Hospital Regional do Gama,MA,São Luís,2111300,Geriatria,Internação Cirúrgica,28489.45,8,M,10,Acidente
+INT-2023-000100,2023-02-08,2023-02-09,K35.8,I25.1,Hospital Sírio-Libanês,MA,São Luís,2111300,Cirurgia Geral,Internação,22761.82,1,M,78,Acidente
+INT-2023-000276,2023-09-25,2023-10-02,O80.0,E66.0,Hospital Municipal Souza Aguiar,SP,São Paulo,3550308,Dermatologia,Internação Clínica,12804.56,7,M,85,Eletivo
+INT-2024-000809,2024-08-16,2024-08-26,D50.9,J45.0,Hospital Universitário Clementino Fraga Filho,MG,Belo Horizonte,3106200,Ortopedia,Internação,31701.74,10,F,8,Urgência
+INT-2023-000226,2023-03-28,2023-04-03,K35.8,K21.0,Hospital Universitário Clementino Fraga Filho,MG,Belo Horizonte,3106200,Geriatria,Internação Cirúrgica,6565.12,6,M,8,Eletivo
+INT-2023-000850,2023-10-09,2023-10-12,S82.0,E14.0,Hospital João XXIII - BH,PA,Belém,1501402,Neurologia,Internação,29835.64,3,F,47,Urgência
+INT-2024-000668,2024-11-25,2024-12-01,J44.1,I25.1,Hospital Universitário - UFMA,DF,Brasília,5300108,Cirurgia Geral,Internação,15606.78,6,F,45,Urgência
+INT-2023-000599,2023-03-22,2023-03-29,S72.0,N18.3,Hospital Albert Einstein,PA,Belém,1501402,Pediatria,Internação Clínica,40870.46,7,M,9,Acidente
+INT-2024-000456,2024-02-08,2024-02-13,S72.0,E78.0,Hospital Municipal Souza Aguiar,PR,Curitiba,4106902,Ortopedia,Internação Cirúrgica,15141.63,5,,63,Acidente
+INT-2024-000624,2024-06-17,2024-06-21,J18.9,E78.0,Hospital Estadual Getúlio Vargas,RS,Caxias do Sul,4305108,Ortopedia,Internação,9096.95,4,M,62,Acidente
+INT-2023-000905,2023-05-03,2023-05-10,N39.0,E78.0,Hospital Universitário - UFMA,MG,Uberlândia,3170206,Ginecologia,Internação Clínica,2125.61,7,M,95,Acidente
+INT-2024-000113,2024-09-03,2024-09-08,I10,E66.0,Hospital Regional do Gama,CE,Fortaleza,2304400,Ortopedia,Internação Clínica,33576.64,5,M,91,Acidente
+INT-2024-000728,2024-08-15,2024-08-17,I21.0,E78.0,Hospital Municipal Souza Aguiar,RJ,Niterói,3303302,Dermatologia,Internação Clínica,47777.67,2,F,89,Eletivo
+INT-2024-000530,2024-03-18,2024-03-25,D50.9,,Hospital Sírio-Libanês,PA,Belém,1501402,Urologia,Internação Cirúrgica,13789.73,7,M,45,Acidente
+INT-2023-000188,2023-07-31,2023-08-05,S72.0,I10,Hospital Universitário - UFMA,MG,Uberlândia,3170206,Pneumologia,Internação Cirúrgica,32574.51,5,F,92,Acidente
+INT-2024-000945,2024-07-06,2024-07-09,I63.9,,Santa Casa de Misericórdia,BA,Salvador,2927408,Infectologia,Internação Clínica,8026.53,3,M,12,Acidente
+INT-2024-000574,2024-10-28,2024-10-30,N39.0,K21.0,Hospital Universitário Clementino Fraga Filho,SP,São Paulo,3550308,Infectologia,Internação Clínica,49197.88,2,M,45,Urgência
+INT-2023-000573,2023-12-03,2023-12-04,J18.9,I25.1,Santa Casa de Misericórdia,DF,Brasília,5300108,Gastroenterologia,Internação Cirúrgica,27137.51,1,F,0,Acidente

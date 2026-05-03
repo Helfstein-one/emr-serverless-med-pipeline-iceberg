@@ -1,0 +1,17 @@
+# ============================================================
+# Perfil de Conexão dbt → Spark Thrift Server
+# ============================================================
+
+med_pipeline:
+  outputs:
+    dev:
+      type: spark
+      method: thrift
+      host: "{{ env_var('SPARK_THRIFT_HOST', 'localhost') }}"
+      port: 10000
+      schema: silver
+      threads: 4
+      connect_timeout: 60
+      connect_retries: 3
+
+  target: dev

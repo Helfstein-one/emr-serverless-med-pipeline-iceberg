@@ -1,0 +1,131 @@
+# ============================================================
+# Data Contracts — Camada Silver
+# Contratos de dados com validação de tipos, nulidade,
+# valores aceitos e integridade referencial.
+# ============================================================
+
+version: 2
+
+sources:
+  - name: silver_raw
+    description: "Tabela Iceberg Silver criada pelo PySpark (promote_silver.py)"
+    schema: silver
+    tables:
+      - name: internacoes
+        description: "Internações hospitalares — dados limpos e padronizados"
+        columns:
+          - name: id_internacao
+            description: "Identificador único da internação (formato: INT-YYYY-NNNNNN)"
+            data_type: string
+            tests:
+              - not_null
+              - unique
+
+          - name: data_internacao
+            description: "Data de início da internação"
+            data_type: date
+            tests:
+              - not_null
+
+          - name: data_alta
+            description: "Data da alta hospitalar"
+            data_type: date
+            tests:
+              - not_null
+
+          - name: cid_principal
+            description: "Código CID-10 diagnóstico principal (ex: J18.9)"
+            data_type: string
+            tests:
+              - not_null
+
+          - name: nome_hospital
+            description: "Nome padronizado do hospital (Title Case)"
+            data_type: string
+            tests:
+              - not_null
+
+          - name: uf
+            description: "Unidade Federativa (sigla de 2 letras)"
+            data_type: string
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['SP', 'RJ', 'MG', 'RS', 'BA', 'PE', 'CE', 'DF', 'PR', 'MA', 'PA',
+                           'SC', 'GO', 'AM', 'ES', 'PB', 'RN', 'AL', 'PI', 'MT', 'MS', 'SE',
+                           'RO', 'TO', 'AC', 'AP', 'RR']
+
+          - name: municipio
+            description: "Nome do município"
+            data_type: string
+            tests:
+              - not_null
+
+          - name: cod_municipio_ibge
+            description: "Código IBGE do município (7 dígitos)"
+            data_type: string
+            tests:
+              - not_null
+
+          - name: especialidade
+            description: "Especialidade médica responsável"
+            data_type: string
+            tests:
+              - not_null
+
+          - name: tipo_atendimento
+            description: "Tipo de atendimento hospitalar"
+            data_type: string
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['Internação', 'Internação Cirúrgica', 'Internação Clínica']
+
+          - name: valor_total
+            description: "Valor total da internação em Reais (R$)"
+            data_type: double
+            tests:
+              - not_null
+
+          - name: dias_permanencia
+            description: "Dias de permanência hospitalar"
+            data_type: int
+            tests:
+              - not_null
+
+          - name: sexo
+            description: "Sexo do paciente (M, F ou NI)"
+            data_type: string
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['M', 'F', 'NI']
+
+          - name: idade
+            description: "Idade do paciente em anos (0-150)"
+            data_type: int
+
+          - name: carater_atendimento
+            description: "Caráter do atendimento"
+            data_type: string
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['Urgência', 'Eletivo', 'Acidente']
+
+models:
+  - name: stg_internacoes
+    description: "Staging: limpeza de tipos, padronização de CIDs e nomes de hospitais"
+    columns:
+      - name: id_internacao
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_internacoes_dedup
+    description: "Deduplica registros da staging por id_internacao"
+    columns:
+      - name: id_internacao
+        tests:
+          - not_null
+          - unique

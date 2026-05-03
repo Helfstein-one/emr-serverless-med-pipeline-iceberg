@@ -1,0 +1,71 @@
+# ============================================================
+# Data Contracts — Camada Gold (Star Schema)
+# ============================================================
+
+version: 2
+
+models:
+  - name: dim_tempo
+    description: "Dimensão de Tempo — granularidade diária com atributos de calendário"
+    columns:
+      - name: sk_tempo
+        description: "Surrogate key (formato YYYYMMDD)"
+        tests:
+          - not_null
+          - unique
+      - name: data
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_geografia
+    description: "Dimensão de Geografia — UFs, municípios e regiões do Brasil"
+    columns:
+      - name: sk_geografia
+        description: "Surrogate key baseada no código IBGE"
+        tests:
+          - not_null
+          - unique
+      - name: cod_municipio_ibge
+        tests:
+          - not_null
+
+  - name: dim_especialidade
+    description: "Dimensão de Especialidade Médica"
+    columns:
+      - name: sk_especialidade
+        description: "Surrogate key da especialidade"
+        tests:
+          - not_null
+          - unique
+      - name: nome_especialidade
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_atendimentos
+    description: "Fato de Atendimentos Hospitalares — métricas de internação"
+    columns:
+      - name: sk_atendimento
+        description: "Surrogate key do atendimento"
+        tests:
+          - not_null
+          - unique
+      - name: sk_tempo_internacao
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_tempo')
+              field: sk_tempo
+      - name: sk_geografia
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_geografia')
+              field: sk_geografia
+      - name: sk_especialidade
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_especialidade')
+              field: sk_especialidade
