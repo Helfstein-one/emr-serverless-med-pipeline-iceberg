@@ -1,0 +1,51 @@
+name: CI — Testes (Unit, Integration, Contract, E2E)
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-pipeline:
+    name: 🧪 Executar Pipeline de Testes Completos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Java 17 (Necessário para o Spark/Iceberg)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Dependências
+        run: |
+          pip install --upgrade pip
+          pip install pytest pytest-mock pyspark pytest-cov findspark boto3
+          
+      # Adicionar o diretório atual ao PYTHONPATH para que os testes consigam importar "spark.jobs" etc.
+      - name: Testes Unitários
+        run: |
+          export PYTHONPATH=$(pwd)
+          pytest tests/unit/ -v
+
+      - name: Testes de Integração
+        run: |
+          export PYTHONPATH=$(pwd)
+          pytest tests/integration/ -v
+
+      - name: Testes de Contrato (Nessie/Iceberg)
+        run: |
+          export PYTHONPATH=$(pwd)
+          pytest tests/contract/ -v
+
+      - name: Testes End-to-End (E2E)
+        run: |
+          export PYTHONPATH=$(pwd)
+          pytest tests/e2e/ -v
